@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe5ef">
+  <title>Happy Birthday, Laxmi! 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Birthday home">♡ for Laxmi</a>
+    <span class="top-note">a little page made with love</span>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+        <h1>Happy Birthday,<br><span>Laxmi Dosti</span></h1>
+        <p class="intro">To my wonderful girl best friend — today is a celebration of you, and a little reminder of how much brighter life feels with you in it. 🌷</p>
+        <button class="primary-btn" id="openSurprise">Open your surprise <span>♡</span></button>
+        <p class="tiny-note">Psst… there’s a little magic waiting for you.</p>
+      </div>
+      <div class="cake-scene" aria-label="Illustration of a pink birthday cake">
+        <div class="orbit orbit-one">✦</div><div class="orbit orbit-two">♡</div>
+        <div class="cake-plate"></div>
+        <div class="cake cake-bottom"><div class="icing"></div><span class="cake-heart">♡</span></div>
+        <div class="cake cake-top"><div class="icing"></div><span class="sprinkles">· · · · ·</span></div>
+        <div class="candle"><div class="flame" id="flame"></div></div>
+        <div class="cake-caption">make a wish ✨</div>
+      </div>
+      <div class="scroll-hint">SCROLL TO FEEL THE LOVE <span>↓</span></div>
+    </section>
+
+    <section class="wish-section reveal" id="message">
+      <p class="eyebrow">A NOTE JUST FOR YOU</p>
+      <h2>Dear <span>Laxmi</span>,</h2>
+      <div class="letter">
+        <div class="letter-heart">💌</div>
+        <p>Some people make ordinary days feel special just by being in them. You are one of those people.</p>
+        <p>Thank you for your kindness, your laughter, your silly moments, and all the memories that make our friendship so precious. I hope this new chapter brings you endless happiness, exciting adventures, good health, and everything your heart wishes for.</p>
+        <p>Keep shining, keep smiling, and never forget how special you are. The world is brighter with you in it!</p>
+        <p class="signoff">With lots of love & friendship, <span>your bestie ♡</span></p>
+      </div>
+    </section>
+
+    <section class="friendship-section reveal">
+      <p class="eyebrow">NOT JUST A BIRTHDAY WISH</p>
+      <h2>A little reminder <span>for every day</span></h2>
+      <p class="friendship-intro">I made this page to celebrate your birthday, but also to say something that deserves to be said all year long: I’m grateful to have you as my friend.</p>
+      <div class="friendship-notes">
+        <article class="friendship-note"><span>01</span><p>You deserve to feel appreciated—not only on your birthday, but on ordinary days too.</p></article>
+        <article class="friendship-note"><span>02</span><p>Your kindness and laughter make the moments around you feel a little lighter.</p></article>
+        <article class="friendship-note"><span>03</span><p>No matter how busy life gets, I hope you always remember how valued you are.</p></article>
+      </div>
+    </section>
+
+    <section class="reasons reveal">
+      <p class="eyebrow">A FEW LITTLE REMINDERS</p>
+      <h2>Reasons you're <span>one of a kind</span></h2>
+      <div class="reason-grid">
+        <article class="reason-card"><span>🌸</span><h3>Your kindness</h3><p>You make people feel seen and cared for.</p></article>
+        <article class="reason-card"><span>☀️</span><h3>Your smile</h3><p>You bring sunshine even to the simplest moments.</p></article>
+        <article class="reason-card"><span>🦋</span><h3>Your spirit</h3><p>You are wonderfully, unapologetically you.</p></article>
+      </div>
+    </section>
+
+    <section class="gift-section reveal" id="gift">
+      <p class="eyebrow">A LITTLE GIFT FOR YOU</p>
+      <h2>Made with love, <span>Laxmi</span></h2>
+      <p class="gift-intro">There’s a little birthday surprise with your name on it. Tap the gift to open it! 🎀</p>
+      <button class="gift-button" id="openGift" type="button" aria-label="Open Laxmi's birthday gift" aria-pressed="false">
+        <span class="gift-box" aria-hidden="true">
+          <span class="gift-lid"></span>
+          <span class="gift-bow"></span>
+          <span class="gift-body"><span class="gift-ribbon"></span><span class="gift-name">Laxmi</span></span>
+        </span>
+      </button>
+      <p class="gift-message" id="giftMessage" aria-live="polite">A little surprise, wrapped just for you ♡</p>
+    </section>
+
+    <section class="final-section reveal">
+      <div class="final-card">
+        <div class="big-heart">♡</div>
+        <p class="eyebrow">ONE LAST THING…</p>
+        <h2>Keep making<br><span>beautiful memories.</span></h2>
+        <p>May this year be full of sweet surprises, new dreams, and moments worth remembering.</p>
+        <button class="primary-btn" id="celebrate">Celebrate, Laxmi! 🎉</button>
+      </div>
+      <p class="footer-line">Made especially for Laxmi Pun <span>♡</span></p>
+    </section>
+  </main>
+
+  <div class="modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-card">
+      <button class="close-btn" id="closeModal" aria-label="Close">×</button>
+      <div class="birthday-scene" id="birthdayScene" role="img" aria-label="Laxmi cuts the birthday cake and shares a slice while cute cats clap around them">
+        <span class="scene-sparkle sparkle-left" aria-hidden="true">✦</span>
+        <span class="scene-sparkle sparkle-right" aria-hidden="true">♡</span>
+        <div class="party-cat cat-one" aria-hidden="true"><span>🐱</span><span class="cat-paws">👏</span></div>
+        <div class="party-cat cat-two" aria-hidden="true"><span>😺</span><span class="cat-paws">👏</span></div>
+        <div class="party-cat cat-three" aria-hidden="true"><span>🐈</span><span class="cat-paws">👏</span></div>
+        <div class="party-cat cat-four" aria-hidden="true"><span>😸</span><span class="cat-paws">👏</span></div>
+        <div class="party-person laxmi-person" aria-hidden="true">
+          <svg class="anime-girl" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 56C10 22 30 7 52 8c27 0 40 20 34 52l-5 30H19z" fill="#513447"/>
+            <path d="M38 81h25v22H38z" fill="#f3bd9e"/>
+            <path d="M21 43c0-22 13-34 31-34s30 13 30 34v25c-8-7-11-18-11-29-12 10-29 13-50 10z" fill="#513447"/>
+            <ellipse cx="50" cy="50" rx="25" ry="31" fill="#ffd9bd"/>
+            <path d="M26 42c2-20 12-32 27-32 16 0 26 10 29 28-13-5-21-13-25-20-8 12-18 20-31 24z" fill="#513447"/>
+            <path d="M27 48c-6-3-9 2-6 10 2 5 5 7 8 6M73 48c6-3 9 2 6 10-2 5-5 7-8 6" fill="#ffd9bd"/>
+            <path d="M31 49c5-5 11-5 15 0M55 49c5-5 11-5 15 0" fill="none" stroke="#513447" stroke-width="3" stroke-linecap="round"/>
+            <ellipse cx="39" cy="56" rx="3" ry="5" fill="#493142"/><ellipse cx="62" cy="56" rx="3" ry="5" fill="#493142"/>
+            <circle cx="40" cy="55" r="1" fill="#fff"/><circle cx="63" cy="55" r="1" fill="#fff"/>
+            <ellipse cx="31" cy="64" rx="6" ry="3" fill="#f6a0a8" opacity=".65"/><ellipse cx="69" cy="64" rx="6" ry="3" fill="#f6a0a8" opacity=".65"/>
+            <path d="M46 69c3 4 7 4 10 0" fill="none" stroke="#c9697b" stroke-width="2" stroke-linecap="round"/>
+            <path d="M16 123c1-21 13-34 34-34s34 13 35 34z" fill="#ec85a7"/>
+            <path d="M36 94l14 12 14-12" fill="#fff5f8"/>
+            <path d="M50 104l-4 8 4 9 4-9z" fill="#d95d88"/>
+            <path d="M27 31c-5 15-6 32-3 48M73 30c5 16 5 33 2 49" fill="none" stroke="#513447" stroke-width="8" stroke-linecap="round"/>
+            <path d="M24 24c4-12 14-18 27-18" fill="none" stroke="#745067" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+          </svg>
+          <span>Laxmi</span>
+        </div>
+        <div class="scene-cake-wrap">
+          <div class="scene-candle"><span></span></div>
+          <div class="scene-cake" aria-hidden="true"><div class="scene-frosting"></div></div>
+          <div class="scene-cake-slice" aria-hidden="true"><div class="slice-frosting"></div></div>
+          <div class="scene-plate"></div>
+        </div>
+        <div class="party-person cake-friend" aria-hidden="true"><span class="friend-happy">🧑🏻‍🦱</span><span class="friend-fed">😋</span><span>bestie</span></div>
+        <span class="fed-heart" aria-hidden="true">💗</span>
+        <p class="scene-caption">a birthday party just for you!</p>
+      </div>
+      <p class="eyebrow">SURPRISE!</p>
+      <h2 id="modalTitle">You deserve all the happiness, Laxmi!</h2>
+      <p id="surpriseMessage">The cats are ready to cheer! Cut the cake and share a slice with your bestie.</p>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">♫ Play birthday music</button>
+      <button class="primary-btn" id="modalCelebrate">Cut cake & share! 🍰</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Happy Birthday, Laxmi! 💗</div>
+  <script src="script.js"></script>
+</body>
+</html>
